@@ -38,29 +38,33 @@ public class PresentationLayer {
    */
   public static void main(String[] args){
     
-  PresentationLayer p = new PresentationLayer();
-  
-  System.out.println("Welcome to Pizza 3.14 Ordering Company");
+    PresentationLayer p = new PresentationLayer();
+    
+    
+    
+     
+    System.out.println("Welcome to Pizza 3.14 Ordering Company");
  
 
   int num = p.menu();
-  while( num != 0){
-      p.menuChoice(num);
-    num = p.menu();
-  }
+    while( num != 0){
+        p.menuChoice(num);
+        num = p.menu();
+    }
 
-  System.out.println("\nThank you for choosing Pizza 3.14" );
+    System.out.println("\nThank you for choosing Pizza 3.14" );
+  System.exit(0);
+
+  }//End MAIN
+
   
-
-  }//Main
-
   /**
    * MENU
    * @param num
    * @param p
    * @return
    */
-  public int menuChoice(int num){
+  public void menuChoice(int num){
     if(num == 1){
       signUp();
       
@@ -85,7 +89,7 @@ public class PresentationLayer {
       
       currentOrder.reset();
     
-  
+      
       
     }
     
@@ -93,10 +97,7 @@ public class PresentationLayer {
       num = 0;
     }
     
-    return num;
-    
-    
-  }
+  }//END menuChoice
   
   
   public void topMenu(Topping t){
