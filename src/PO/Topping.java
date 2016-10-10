@@ -13,10 +13,7 @@ public class Topping {
   @Column(name="topping_id")
   private int topId;
 
-  
-
-  
-  private int toppingPrice;
+  private double toppingPrice;
 
   private String toppingName;
   
@@ -96,25 +93,25 @@ public class Topping {
     
 
     switch(num){
-    case 0: this.toppingPrice = 0;
+    case 0: this.toppingPrice = 1.00;
           break;
-    case 1: this.toppingPrice = 1;
+    case 1: this.toppingPrice = 1.00;
           break;
-    case 2: this.toppingPrice = 2;
+    case 2: this.toppingPrice = 2.00;
           break;
-    case 3: this.toppingPrice = 3;
+    case 3: this.toppingPrice = 2.00;
           break;
-    case 4: this.toppingPrice = 4;
+    case 4: this.toppingPrice = 1.50;
           break;
-    case 5: this.toppingPrice = 5;
+    case 5: this.toppingPrice = 1.50;
           break;
-    case 6: this.toppingPrice = 6;
+    case 6: this.toppingPrice = 3.50;
           break;
-    case 7: this.toppingPrice = 7;
+    case 7: this.toppingPrice = 3.50;
           break;
-    case 8: this.toppingPrice = 8;
+    case 8: this.toppingPrice = 3.00;
           break;
-    case 9: this.toppingPrice = 9;
+    case 9: this.toppingPrice = 3.00;
           break;
           
     }        

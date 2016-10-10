@@ -20,6 +20,7 @@ import org.hibernate.Transaction;
  *
  */
 public class PresentationLayer {
+  
   private static final int MAXCOUNTER = 3;
   private Scanner scan = new Scanner(System.in);
   private ServiceLayer s = new ServiceLayer();
@@ -44,10 +45,12 @@ public class PresentationLayer {
 
   int num = p.menu();
   while( num != 0){
-    int x = p.menuChoice(num);
+      p.menuChoice(num);
     num = p.menu();
   }
-    
+
+  System.out.println("\nThank you for choosing Pizza 3.14" );
+  
 
   }//Main
 
@@ -79,9 +82,15 @@ public class PresentationLayer {
       payMenu();
       
       s.makeOrder(this.currentOrder);
+      
+      currentOrder.reset();
     
   
       
+    }
+    
+    if(num == 0){
+      num = 0;
     }
     
     return num;
@@ -297,6 +306,9 @@ public class PresentationLayer {
     currentOrder.setCustomer(currentCustomer);
       
   }
+  
+ 
+  
   
   /**
    * 

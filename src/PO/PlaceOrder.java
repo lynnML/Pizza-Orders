@@ -142,6 +142,14 @@ public List<Topping> getToppings() {
     this.toppings = toppings;
   }
 
+  public void reset(){
+    this.orderID = 0;
+    this.size = null;
+    this.paymentMethod = null;
+    this.price = 0;
+    this.payment = " ";
+    this.toppings.clear();
+  }
 
 @Temporal(TemporalType.TIMESTAMP)
   public Timestamp getDeliveryTime() {
@@ -154,7 +162,9 @@ public List<Topping> getToppings() {
     this.deliveryTime = deliveryTime;
   }
 
-
+  
+ 
+  
 
 
 
