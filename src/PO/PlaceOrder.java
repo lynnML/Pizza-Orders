@@ -16,8 +16,8 @@ public class PlaceOrder {
   @Column(name = "order_id") 
   private int orderID;
   
-  @Transient
-  private PizzaSize size;
+  @Column(name="size")
+  private String size;
 
   @Transient
   private PaymentType paymentMethod;
@@ -93,12 +93,8 @@ public class PlaceOrder {
   }
  
 
-  public PizzaSize getSize() {
-    return size;
-  }
-
-  public void setSize(PizzaSize size) {
-    this.size = size;
+  public void setSize(int num){
+    /* Needs to be implemented */
   }
 
   public PaymentType getPaymentMethod() {

@@ -58,7 +58,7 @@ public class Topping {
     return this.toppingName;
   }
   
-  public int getToppingPrice(){
+  public double getToppingPrice(){
     return this.toppingPrice;
   }
   
@@ -135,7 +135,7 @@ public class Topping {
     this.toppingName = toppingName;
   }
 
-  
+ 
 
   
  

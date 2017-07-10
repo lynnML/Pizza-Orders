@@ -30,7 +30,7 @@ public class PresentationLayer {
   private PaymentType type;
   private Topping topping1, topping2, topping3;
   
-  
+  /*testing branch*/
   
   /**
    * Main
@@ -40,9 +40,6 @@ public class PresentationLayer {
     
     PresentationLayer p = new PresentationLayer();
     
-    
-    
-     
     System.out.println("Welcome to Pizza 3.14 Ordering Company");
  
 
@@ -71,7 +68,7 @@ public class PresentationLayer {
     }
     
     if(num == 2){
-      currentCustomer = s.login();
+      this.currentCustomer = s.login();
       //menu();
     }
     

@@ -15,6 +15,7 @@ import org.hibernate.criterion.MatchMode;
 
 import PO.Customer;
 import PO.HibernateUtil;
+import PO.Pizza;
 import PO.PlaceOrder;
 
 public class ConcretePizzaShopDAO implements PizzaShopDAO

@@ -70,9 +70,9 @@ public class ServiceLayer {
     order.setDeliveryTime(deliveryTime);
     
     order.setPizzaToppings();
-    
-  
     order.setPayment();
+    
+    
     
     customerOrder.createOrder(order);
     
