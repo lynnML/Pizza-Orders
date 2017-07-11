@@ -19,10 +19,10 @@ public class Customer {
   private String password;
   private java.util.Calendar registrationDate;
   
-  @OneToMany(mappedBy="customer", targetEntity = PlaceOrder.class, 
+  /**@OneToMany(mappedBy="customer", targetEntity = PlaceOrder.class, 
            fetch=FetchType.LAZY, cascade = CascadeType.ALL)
   private List<PlaceOrder> placeOrders;
-  
+  **/
   @Column(unique = true, name="user_Name")
   private String userName;
   

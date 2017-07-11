@@ -30,9 +30,6 @@ public class PresentationLayer {
   private PaymentType type;
   private Topping topping1, topping2, topping3;
   
-  /*testing branch*/
-  
-  /** another test **/
   
   /**
    * Main
@@ -289,17 +286,17 @@ public class PresentationLayer {
     if (num == 1){
       this.size = new PizzaSize(Size.SMALL);
       size.setSizePrice();
-      currentOrder.setSize(size);
+      //currentOrder.setSize(size);
     }
     if (num == 2){
       this.size = new PizzaSize(Size.MEDIUM);
       this.size.setSizePrice();
-      currentOrder.setSize(size);
+      //currentOrder.setSize(size);
     }
     if (num == 3){
       this.size= new PizzaSize(Size.LARGE);
       size.setSizePrice();
-      currentOrder.setSize(size);
+      //currentOrder.setSize(size);
       
     }
 
