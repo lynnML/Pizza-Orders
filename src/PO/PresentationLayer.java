@@ -274,6 +274,7 @@ public class PresentationLayer {
   public void sizeMenu(){
     int num = 0;
     
+    
     System.out.println("Select any size Pizza.\n");
     System.out.println("  (1) SMALL - $3");
     System.out.println("  (2) MEDIUM - $5");
@@ -286,20 +287,23 @@ public class PresentationLayer {
     if (num == 1){
       this.size = new PizzaSize(Size.SMALL);
       size.setSizePrice();
-      //currentOrder.setSize(size);
+      currentOrder.setSize(size);
+      currentOrder.setPizzaPrice(size);
     }
     if (num == 2){
       this.size = new PizzaSize(Size.MEDIUM);
       this.size.setSizePrice();
-      //currentOrder.setSize(size);
+      currentOrder.setSize(size);
+      currentOrder.setPizzaPrice(size);
     }
     if (num == 3){
       this.size= new PizzaSize(Size.LARGE);
       size.setSizePrice();
-      //currentOrder.setSize(size);
-      
+      currentOrder.setSize(size);
+      currentOrder.setPizzaPrice(size);
     }
-
+	
+	
     currentOrder.setCustomer(currentCustomer);
       
   }

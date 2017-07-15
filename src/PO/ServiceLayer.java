@@ -66,7 +66,8 @@ public class ServiceLayer {
     PizzaShopDAO customerOrder = new ConcretePizzaShopDAO();
     PlaceOrder order = placeOrder;
     
-    order.setSizeOfPizza();
+    //order.setSize(size);
+    
     order.setDeliveryTime(deliveryTime);
     
     order.setPizzaToppings();

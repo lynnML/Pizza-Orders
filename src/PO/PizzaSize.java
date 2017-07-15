@@ -1,9 +1,9 @@
 package PO;
 public class PizzaSize{
 
-private static final int SMALL = 3;
-private static final int MEDIUM = 5;
-private static final int LARGE = 7;
+private final int SMALL = 3;
+private final int MEDIUM = 5;
+private final int LARGE = 7;
 
 private Size size;
 private int price;
@@ -34,7 +34,9 @@ private String nameOfSize;
        break;
    }//switch
  }//setSizePrice
-
+  
+  
+  
   /**
    * 
    * @return

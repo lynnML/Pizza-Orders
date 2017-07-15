@@ -72,12 +72,6 @@ public class PlaceOrder {
     this.toppings = new ArrayList<Topping>();
   }
   
-
-
-  public void setSizeOfPizza(){
-    //this.sizeOfPizza = this.size.getPizzaSize();
-    
-  }
   
   public void setPizzaToppings(){
   //  for(Topping x: toppings){
@@ -93,8 +87,16 @@ public class PlaceOrder {
   }
  
 
-  public void setSize(int num){
+  public void setSize(PizzaSize size){
     /* Needs to be implemented */
+	this.size = size.getPizzaSize();
+	  
+  }
+  
+  
+  public void setPizzaPrice(PizzaSize price){
+	this.price = price.getPrice();
+	  
   }
 
   public PaymentType getPaymentMethod() {
